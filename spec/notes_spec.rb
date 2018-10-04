@@ -2,19 +2,15 @@ require "notes"
 
 describe Notes do
   describe "#add" do
-    it "returns a note with title:'New note'" do
-      note = Notes.new("New note")
-      expect(note.title).to eq "New note"
+    
     end
+  end
 
-    it "returns a note with title:'New note 2'" do
-      note = Notes.new("New note 2")
-      expect(note.title).to eq "New note 2"
-    end
-
-    it "returns a note with body:'This is new note'" do
-      note = Notes.new("New note", "This is a new note")
-      expect(note.body).to eq "This is a new note"
+  describe "#list_notes" do
+    it "should have a count of 1" do
+      notes = Notes.new
+      note = Note.new("title", "body")
+      expect(notes.list_notes.count).to eq 1
     end
   end
 end

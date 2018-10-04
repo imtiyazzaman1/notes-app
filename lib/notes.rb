@@ -12,6 +12,6 @@ class Notes
   end
 
   def list_notes
-
+    "#{@notes[0].title}: #{@notes[0].body}"
   end
 end

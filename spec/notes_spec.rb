@@ -13,6 +13,10 @@ describe Notes do
   end
 
   describe "#list_notes" do
-
+    it "should show 1 note with title: 'Note' body: 'This is a new note'" do
+      note = Note.new("Note", "This is a new note")
+      subject.add(note)
+      expect(subject.list_notes).to eq "Note: This is a new note"
+    end
   end
 end

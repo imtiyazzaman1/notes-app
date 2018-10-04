@@ -1,15 +1,17 @@
+require_relative "note"
+
 class Notes
+  attr_reader :notes
 
-  def initialize(title, body = "")
-    @title = title
-    @body = body
+  def initialize
+    @notes = []
   end
 
-  def title
-    @title
+  def add(note)
+    @notes << note
   end
 
-  def body
-    @body
+  def list_notes
+
   end
 end

@@ -16,7 +16,16 @@ describe Notes do
     it "should show 1 note with title: 'Note' body: 'This is a new note'" do
       note = Note.new("Note", "This is a new note")
       subject.add(note)
-      expect(subject.list_notes).to eq "Note: This is a new note"
+      expect(subject.list_notes).to eq "Note"
     end
+
+    it "should show 2 notes" do
+      note1 = Note.new("Note 1", "This is a new note 1")
+      subject.add(note1)
+      note2 = Note.new("Note 2", "This is a new note 2")
+      subject.add(note2)
+      expect(subject.list_notes).to eq "Note 1\nNote 2"
+    end
+
   end
 end

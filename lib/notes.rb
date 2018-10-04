@@ -12,6 +12,9 @@ class Notes
   end
 
   def list_notes
-    "#{@notes[0].title}: #{@notes[0].body}"
+
+    @notes.map do |note|
+      note.title
+    end.join("\n")
   end
 end

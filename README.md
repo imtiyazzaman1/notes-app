@@ -8,3 +8,8 @@ This was an exercise to use TDD in the implementation of each feature
 
 ### Instructions
 Load `notes.rb` into `irb`
+
+### Tests
+- `bundle install`
+- `cd` into directory
+- Run `rspec`

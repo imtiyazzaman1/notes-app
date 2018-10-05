@@ -4,7 +4,7 @@ This an app designed to allow a user to:
 - View the titles of the notes currently stored in the app
 - Select a note to view its title and body
 
-This was an exercise to use TDD in the implementation of each feature
+This was an exercise to use TDD in the implementation of each feature while at Makers Academy.
 
 ### Instructions
 Load `notes.rb` into `irb`
